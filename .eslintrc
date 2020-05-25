@@ -1,0 +1,29 @@
+{      
+  "extends": ["airbnb"],
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "plugins": [
+    "svelte3"
+  ],
+  "overrides": [
+    {
+      "files": ["*.svelte"],
+      "processor": "svelte3/svelte3"
+    }
+  ],
+  "rules": {
+    "no-param-reassign": ["error", { "props": false }],
+    "no-mixed-operators": 0,
+    "no-underscore-dangle": 0,
+    "no-multiple-empty-lines": 0,
+    "max-len": 0,
+    "linebreak-style": 0,
+    "class-methods-use-this": 0,
+    "missing-custom-element-compile-options": 0,
+    "import/first": 0,
+    "import/prefer-default-export": 0,
+    "import/no-mutable-exports": 0
+  }
+}
